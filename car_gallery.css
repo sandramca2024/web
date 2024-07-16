@@ -1,0 +1,14 @@
+
+.container{
+    border: 2px solid rgb(137, 157, 204);
+    padding: 30px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: minmax(200px,100px);
+    grid-template-rows: 75px;
+ 
+}
+
+h2{
+    align-items: center;
+}

@@ -1,0 +1,29 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+}
+
+.flower {
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.flower img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flower h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.flower p {
+    font-size: 14px;
+    color: #666;
+}

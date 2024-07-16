@@ -1,0 +1,170 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #fff; /* Default text color set to white */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+header h1 {
+    margin: 10px;
+    font-size: 35px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+#hero {
+    background-image: url('path/to/hero-image.jpg'); /* Update with the correct path to your hero image */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero .hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#hero .hero-text p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#hero .btn {
+    background-color: #abaaaa;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#hero .btn:hover {
+    background-color: #ffffff;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; /* Ensure section headings are white */
+}
+
+/* Specific sections styles */
+#about, #contact, #services {
+    padding: 20px 0;
+    text-align: center;
+}
+
+#about h2, #contact h2, #services h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.about-images {
+    display: flex;
+    gap: 10px;
+}
+
+.about-images img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.service img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
