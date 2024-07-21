@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container
+    {
+    border:4px solid grey ;
+    margin: 50px;
+    display:grid;
+    grid-auto-flow: column;
+   
+    grid-template-rows:repeat(2,auto);
+    
+    }
+    .grid-item
+    {
+        border: 3px solid black;
+       
+    }
+    .hor
+    {
+        grid-column: span 2;
+        background-color: red;
+    }
+    .ver
+    {
+        grid-row: span 2;
+        background-color: yellow;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="grid-item hor"><img src="porsche-718.webp" alt=""></div>
+        <div class="grid-item two hor"><img src="porsche-911 carrera.webp" alt=""></div>
+        <div class="grid-item hor"><img src="porsche-911GT3.webp" alt=""></div>
+        <div class="grid-item four"><img src="porsche-911TurboS.webp" alt=""></div>
+        <div class="grid-item ver"><img src="porsche-st.webp" alt=""></div>
+        <div class="grid-item big"><img src="porsche-911GT3rs.webp" alt=""></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+      @font-face {
+    font-family: 'Porsche Next';
+    src: url('path-to-your-font-file/PorscheNext-Regular.woff2') format('woff2'),
+         url('path-to-your-font-file/PorscheNext-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    body
+    {
+        background:linear-gradient(white,grey);
+       
+    }
+    header
+    {
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        
+    }
+    .flex-container
+    {
+        
+        
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .flex-box
+    {
+        
+        display:flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       padding-top: 20px;
+       justify-content: center;
+       align-items: center;
+    }
+    .images
+    {  
+    
+        background-color: white; 
+        height:500px;
+        width: 400px;
+        border: 5px;
+        box-shadow:7px 10px 15px grey;
+        border-radius: 10px;
+        margin: 10px;
+        margin-top: 40px;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s;
+        
+        
+    }
+    .car img
+    {
+        animation: slide-in 1s forwards ease-out;
+    }
+  
+    @keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 68px) {
+    .container {
+        width: 100%;
+    }
+} 
+    
+    .car
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title
+    {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 10px;
+        text-align: left;
+        font-size:larger;
+        background-color:rgb(174, 203, 229);
+        
+        
+        
+    }
+    .content
+    {
+        margin-top: 40px;
+        flex-direction: column;
+       
+        padding-left: 15px;
+        padding-right: 15px;
+
+        
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    }
+    .New
+    {
+        font-weight: lighter;
+        color: red;
+    }
+    .splt
+    {
+        
+        font-weight: bold;
+        font-size: 20px;
+        width:40px;
+    }
+    .sprt
+    {
+        padding-left: 80px;
+        font-weight:lighter;
+        font-size: 18px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: grey;
+        
+    }
+    footer
+    {
+        width: 100%;
+        height:40px;
+        background-color: rgb(44, 43, 43);
+    }
+    .model
+    {
+        font-size:50px;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        font-family:monospace;
+    }
+</style>
+<body>
+    <header>
+        
+        <img src="thumpnail.png" alt="">
+    </header>
+    <div class="model"> SELECT AND CONFIGURE MODELS</div>
+   <div class="flex-container">
+    <div class="flex-box">
+    <div class="images">
+        <div class="car">
+            <img src="porsche-911 carrera.webp" alt="">
+           
+        </div>
+        <div class="title">911 Carera <br><span class="New">New</span> <br>from INR 3.2 Crores </div> 
+        <div class="content">
+            <hr> <span class="splt">379 HP </span>
+             <span class="sprt"style=""> max power</span>
+            <hr> <span class="splt">4. 0 S </span>
+             <span class="sprt"style=""> 0 to 60 mph</span>
+            <hr> <span class="splt">182 mph </span>
+             <span class="sprt"style=""> top track speed</span>
+
+            </div>
+    </div>
+    <div class="images">
+        <div class="car">
+            <img src="porsche-911GT3.webp" alt="">
+
+        </div>
+        <div class="title">911 gt3 <br><span class="New">New</span> <br>from INR 5.6 Crores </div> 
+        <div class="content"><span class="splt">479 HP </span>
+            <span class="sprt"style=""> max power</span>
+           <hr> <span class="splt">3. 0 S </span>
+            <span class="sprt"style=""> 0 to 60 mph</span>
+           <hr> <span class="splt">192 mph </span>
+            <span class="sprt"style=""> top track speed</span>
+        </div>
+    </div>
+    <div class="images">    
+        <div class="car">
+            <img src="porsche-911GT3rs.webp" alt="">
+        </div>
+        <div class="title">911 GT3 RS <br><span class="New">New</span> <br>from INR 5.2 Crores </div> 
+        <div class="content">
+             <span class="splt">635 HP </span>
+             <span class="sprt"style=""> max power</span>
+            <hr> <span class="splt">2.1. 0 S </span>
+             <span class="sprt"style=""> 0 to 60 mph</span>
+            <hr> <span class="splt">232 mph </span>
+             <span class="sprt"style=""> top track speed</span>
+        </div>
+    </div>
+    <div class="images">    
+        <div class="car">
+            <img src="porsche-911TurboS.webp" alt="">
+        </div>
+        <div class="title">911 Turbo S <br><span class="New">New</span> <br>from INR 3.2 Crores </div> 
+        <div class="content">
+             <span class="splt">479 HP </span>
+             <span class="sprt"style=""> max power</span>
+            <hr> <span class="splt">2. 0 S </span>
+             <span class="sprt"style=""> 0 to 60 mph</span>
+            <hr> <span class="splt">192 mph </span>
+             <span class="sprt"style=""> top track speed</span>
+        </div>
+    </div>    
+    <div class="images">
+        <div class="car">
+            <img src="porsche-st.webp" alt="">
+        </div>
+        <div class="title">911 st <br><span class="New">New</span> <br>from INR 3.2 Crores </div> 
+        <div class="content">
+            <span class="splt">379 HP </span>
+             <span class="sprt"style=""> max power</span>
+            <hr> <span class="splt">4. 0 S </span>
+             <span class="sprt"style=""> 0 to 60 mph</span>
+            <hr> <span class="splt">182 mph </span>
+             <span class="sprt"style=""> top track speed</span>
+        </div>
+    </div>
+    <div class="images">    
+        <div class="car">
+            <img src="porsche-718.webp" alt="">
+        </div>
+        <div class="title">718 spider  <br><span class="New">New</span> <br>from INR 3.2 Crores </div> 
+        <div class="content">
+            <span class="splt">379 HP </span>
+             <span class="sprt"style=""> max power</span>
+            <hr> <span class="splt">4. 0 S </span>
+             <span class="sprt"style=""> 0 to 60 mph</span>
+            <hr> <span class="splt">182 mph </span>
+             <span class="sprt"style=""> top track speed</span>
+        </div>
+    </div>    
+        </div>
+    </div>
+  
+</body>
+</html>
